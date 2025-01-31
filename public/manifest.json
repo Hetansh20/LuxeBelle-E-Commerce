@@ -1,0 +1,21 @@
+{
+  "name": "LuxeBelle",
+  "short_name": "LuxeBelle",
+  "description": "A luxurious and elegant brand.",
+  "website": "https://www.luxebelle.com",
+  "social_media": {
+    "facebook": "https://www.facebook.com/luxebelle",
+    "instagram": "https://www.instagram.com/luxebelle"
+  },
+  "products": [
+    {
+      "name": "Luxury Handbag",
+      "price": 1500
+    },
+    {
+      "name": "Elegant Dress",
+      "price": 800
+    }
+  ]
+}
+

@@ -1,0 +1,50 @@
+"use client"
+
+import Image from "next/image"
+import { motion } from "framer-motion"
+
+const fragranceCategories = [
+  { name: "Women's", image: "/fragrance/women.jpg" },
+  { name: "Men's", image: "/fragrance/mens.jpg" },
+  { name: "Unisex", image: "/fragrance/unisex.jpg" },
+  { name: "Gift Sets", image: "/fragrance/gift-set.jpg" },
+  { name: "Niche", image: "/fragrance/niche.jpg" },
+  { name: "Body Sprays", image: "/fragrance/body-sprays.jpg" },
+]
+
+export default function Fragrance() {
+  return (
+    <div className="min-h-screen py-20">
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-4xl font-bold text-center mb-12 pt-12"
+      >
+        Fragrance
+      </motion.h1>
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {fragranceCategories.map((category, index) => (
+            <motion.div
+              key={category.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div className="aspect-square relative">
+                <Image src={category.image || "/placeholder.svg"} alt={category.name} layout="fill" objectFit="cover" />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold mb-2">{category.name}</h2>
+                <p className="text-gray-600">Discover our {category.name.toLowerCase()} fragrances</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+

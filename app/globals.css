@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 219, 39, 119;
+  --background-start-rgb: 250, 245, 245;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: 193, 18, 31;
+  --secondary-color: 241, 136, 5;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: var(--font-poppins), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair-display), serif;
+  color: rgb(var(--primary-color));
+}
+
+.text-primary {
+  color: rgb(var(--primary-color));
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary-color));
+}
+
+.text-secondary {
+  color: rgb(var(--secondary-color));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--secondary-color));
+}
+

@@ -1,0 +1,6 @@
+# ... existing entries
+
+# MySQL
+*.sql
+*.sql.gz
+

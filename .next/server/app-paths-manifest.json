@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/makeup/page": "app/makeup/page.js",
+  "/fragrance/page": "app/fragrance/page.js",
+  "/new-arrivals/page": "app/new-arrivals/page.js",
+  "/bestsellers/page": "app/bestsellers/page.js",
+  "/special-offers/page": "app/special-offers/page.js",
+  "/page": "app/page.js"
+}
